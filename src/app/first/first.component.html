@@ -1,0 +1,13 @@
+<p>
+  first works!
+  {{forFirstData}}
+
+  {{DummyData}}
+</p>
+
+<input type='text' [(ngModel)]="forSecondData1">
+<input type='text' [(ngModel)]="obj.forSecondData2">
+{{obj | json}}
+<app-second [forSecondData]="'forSecondData'" [forSecondData1]="forSecondData1" [forSecondData2]="obj"></app-second>
+
+<app-third></app-third>
